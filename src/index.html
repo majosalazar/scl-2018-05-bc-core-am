@@ -6,7 +6,48 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 1ra seccion titulo e instrucciones -->
+  <header>
+    <h1>Bienvenides a el party de-cifrador</h1>
+    <h3>¿Cómo se usa?</h3>
+    <p>Aqui van las super instrucciones de uso.</p>
+  </header>
+  <!-- 2da parte ingreso de datos -->
+  <section class="section1">
+    <!-- espacio para ingresar el codigo -->
+    <!--<input type="text" id="ingressText"> -->
+    <h5>Ingresa el texto</h5>
+    <textarea name="codigo" id="ingresoTexto" cols="30" rows="10"></textarea>
+    <!-- espacio para ingresar numero de desplazamiento y boton???? -->
+    <div id="desplazamiento">
+      <h5>Aqui debes ingresar el en valor con el cual codificar</h5>
+      <input type="text" id="displacement">
+      <button >Ingresar</button>
+    </div>
+    <div id="buttons">
+      <button id="encode">Codifica</button>
+      <button id="decode">Decodifica</button>
 
+
+    </div>
+
+
+  </section>
+  <!-- 3ra parte resultados -->
+  <section class="results">
+  <div id="resultText"></div>
+
+  </section>
+
+
+
+
+
+
+
+  
+
+<!-- esto estaba aqui de antes NO BORRAR -->
   <div id="root"></div>
 
   <script src="cipher.js"></script>
