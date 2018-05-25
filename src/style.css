@@ -1,19 +1,22 @@
- body{
+body{
     text-align: center;
     background-color: #edea3d;
     font-family: 'Courier New', Courier, monospace
 }
 
-#resultText {
-    height: 100px;
-    width: 100px;
-    border: 2px solid black;
-    margin: 5px;
+button, textarea {
+    border-radius: 5px;
 }
 
+#numberDis {
+    width: 60px;
+}
 
-
-
+#ingressText {
+    width: 400px;
+    height: 100px;
+    resize: none;
+}
 
 
 
