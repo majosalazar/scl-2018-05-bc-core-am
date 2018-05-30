@@ -2,44 +2,44 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
+  <title>Secret Party</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Ubuntu" rel="stylesheet">  
 </head>
 <body>
-  <!-- 1ra seccion titulo e instrucciones -->
-  <header>
-    <h1>Bienvenides a el party de-cifrador</h1>
-    <h3>¿Cómo se usa?</h3>
-    <p>Aqui van las super instrucciones de <br> skdjskdjaskdjalskdjlaks</p>
-  </header>
-  <!-- 2da parte ingreso de datos -->
  
   <section class="section1">
-    <!-- espacio para ingresar el codigo -->
-    <h5>Ingresa el texto</h5>
-    <textarea placeholder="escribe aqui tu gran mensaje gran" id="ingressText"></textarea>
+    <!-- 1ra seccion titulo e instrucciones -->
     
-    <!-- cuadro para ingresar numero de desplazamiento y boton???? -->
-    <div id="desplazamiento">
-      <h5>Ingresa tu clave:</h5>
-      <input type="number" id="numberDis" min="1" max="1000">
-      <button >></button>
+    <h1>Secret Party</h1>
+    <h3>¿Cómo se usa?</h3>
+    <p>Aqui van las super instrucciones de <br> skdjskdjaskdjalskdjlaks</p>
+
+    <!-- espacio para ingresar el codigo -->
+    <div id="textArea">
+      <h5>Ingresa el texto</h5>
+      <textarea placeholder="gran mensaje gran" id="textIn"></textarea>
     </div>
- 
+      
+    <!-- cuadro para ingresar numero de desplazamiento y boton???? -->
+    <div id="displacement">
+      <h5>Ingresa tu clave:</h5>
+      <input type="number" id="numberDis" min="1" max="1000">     
+    </div>
+  
     <!-- botonera encode - decode -->
-    <div id="buttons">
+    <div class="buttons">
       <button id="encode">Codifica</button>
       <button id="decode">Decodifica</button>
     </div>
-  
-    <!-- 3ra parte resultados -->
-    <div id="resultText">
-      <p>aqui va el text de-codeficado</p>
-    </div>
     
+    <!-- 3ra parte resultados -->
+    <div>
+      <p>aqui va el text de-codeficado</p>
+      <p id="resultText"></p>
+    </div>
 
- 
-  
+    
   </section>
   
 <!-- esto estaba aqui de antes NO BORRAR -->

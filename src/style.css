@@ -1,10 +1,24 @@
 body{
-    text-align: center;
-    background-color: #edea3d;
-    font-family: 'Courier New', Courier, monospace
+    background-image: url(img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;   
+    font-family: 'Ubuntu', sans-serif;
+    color: darkslategrey;
+
 }
 
-button, textarea {
+.section1 {
+    text-align: center;
+    background-color: #FFCC33;
+    width: 70%;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    left: 25%;
+    border-radius: 10px;  
+}
+
+button, textarea, input {
     border-radius: 5px;
 }
 
@@ -12,15 +26,45 @@ button, textarea {
     width: 60px;
 }
 
-#ingressText {
-    width: 400px;
+#textIn {
+    width: 350px;
     height: 100px;
     resize: none;
 }
 
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: white;
+    padding: 5px;
+}
 
+h5, h3 {
+    margin: 7px;
+}
 
+.buttons {
+    padding: 10px;
+}
 
+#encode {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #6BBDB1;
+    margin: 5px;
+    
+}
 
+#decode {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #CE527E;
+    margin: 5px;
+}
 
+#displacement {
+    margin: 20px;
+}
 
