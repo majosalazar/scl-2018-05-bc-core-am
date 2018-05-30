@@ -3,21 +3,29 @@ window.cipher = {
 //es un metodo de un objeto 
 // en los parentesis van offset y el otro xd
 
-  encode: () => {
+  encode: (offset, string) => {
     /* Acá va tu código */
-    for (let i = 0; i < newText.lenght; i++) { 
+    const recorrido = () => {
+      let resultado = " ";
+      for (let i = 0; i < newText.length; i++) {
+        let offset = displacement;
+        let string = newText;
+        
+
+
+        resultado += newText.charCodeAt
+
+          
+        resultado += newText[i].charAt();
+          console.log(recorrido)
+      }
+  }
+ 
 
 
 
-
-
-
-    
   },
-  decode: () => {
+  decode: (offset, string) => {
     /* Acá va tu código */
   }
-
-
-  
 }

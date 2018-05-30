@@ -21,23 +21,21 @@ window.onload = () => {
     //el boton reacciona al click y toma los valores de los const del area de texto y clave
     //boton cifrar
     const encode = document.getElementById("btnEncode").addEventListener("click", () => {
-        const newText = document.getElementById("textIn").value;
-        const displacement = document.getElementById("numberDis").value;
-        document.getElementById("resultText").innerHTML = "aqui va el texto cifrado: " + "yo soy la clave: " + displacement + "y yo el texto: " + newText;
+        const string = document.getElementById("textIn").value
+        const offset = document.getElementById("numberDis").value;
+        document.getElementById("resultText").innerHTML = "aqui va el texto cifrado: " + "yo soy la clave: " + displacement + " y yo el texto: " + newText;
     })
     //boton decifrar
     const decode = document.getElementById("btnDecode").addEventListener("click", () => {
-        const newText = document.getElementById("textIn").value;
-        const displacement = document.getElementById("numberDis").value;
-        document.getElementById("resultText").innerHTML = "aqui va el texto decifrado: " + "yo soy la clave: " + displacement + "y yo el texto: " + newText;
+        const string = document.getElementById("textIn").value;
+        const offset = document.getElementById("numberDis").value;
+        document.getElementById("resultText").innerHTML = "aqui va el texto decifrado: " + "yo soy la clave: " + displacement + " y yo el texto: " + newText;
     })
-
-
-    for (let i = 0; i < newText.lenght; i++) {
-
-
-    }
     
+    
+     
+
+
 
 }
 
