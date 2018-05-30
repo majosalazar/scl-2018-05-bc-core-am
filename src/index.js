@@ -13,25 +13,32 @@ window.onload = () => {
 
     //botón decode esta conectado 
     bDecode.addEventListener("click", () => {
-        console.log(displacement);
-      
-        
+        console.log(displacement);      
     });
     */
 
     //version 2
     //el boton reacciona al click y toma los valores de los const del area de texto y clave
-    const bDecode = document.getElementById("decode").addEventListener("click", () => {
+    //boton cifrar
+    const encode = document.getElementById("btnEncode").addEventListener("click", () => {
         const newText = document.getElementById("textIn").value;
         const displacement = document.getElementById("numberDis").value;
-        document.getElementById("resultText").innerHTML = "cacha lo que sucede" + newText + displacement;
+        document.getElementById("resultText").innerHTML = "aqui va el texto cifrado: " + "yo soy la clave: " + displacement + "y yo el texto: " + newText;
+    })
+    //boton decifrar
+    const decode = document.getElementById("btnDecode").addEventListener("click", () => {
+        const newText = document.getElementById("textIn").value;
+        const displacement = document.getElementById("numberDis").value;
+        document.getElementById("resultText").innerHTML = "aqui va el texto decifrado: " + "yo soy la clave: " + displacement + "y yo el texto: " + newText;
     })
 
-    const bEncode = document.getElementById("encode").addEventListener("click", () => {
-        const newText = document.getElementById("textIn").value;
-        const displacement = document.getElementById("numberDis").value;
-        document.getElementById("resultText").innerHTML = "cacha lo que sucede" + newText + displacement;
-    })
+
+    for (let i = 0; i < newText.lenght; i++) {
+
+
+    }
+    
+
 }
 
 
