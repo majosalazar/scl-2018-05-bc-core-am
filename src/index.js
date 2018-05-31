@@ -27,8 +27,10 @@ window.onload = () => {
         const newText = document.getElementById("textIn").value.toUpperCase();
         //numero de desplazamientos
         const displacement = document.getElementById("numberDis").value;
+        //conectar con el cipher js, trae el resultad
+        let textDecode = window.cipher.decode(newText, displacement);     
         //imprime el texto decifrado
-        document.getElementById("resultText").innerHTML = "aqui va el texto decifrado: " + "yo soy la clave: " + displacement + " y yo el texto: " + newText;
+        document.getElementById("resultText").innerHTML = "aqui: " + textDecode;
     })
     
     
