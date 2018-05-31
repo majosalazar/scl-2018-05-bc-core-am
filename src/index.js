@@ -1,14 +1,4 @@
-/* Acá va tu código correspondiente al DOM*/
 window.onload = () => {
-    //declarando const, si las declaro antes no me funciona :C
-    /*
-    const newText = document.getElementById("textIn").value.toUpperCase();
-    const displacement = document.getElementById("numberDis").value;
-    const bEncode = document.getElementById("encode");
-    const bDecode = document.getElementById("decode");
-    */
-
-
     //el boton reacciona al click y toma los valores de los const del area de texto y clave
     //boton cifrar
     const OnEncode = document.getElementById("btnEncode").addEventListener("click", () => {
@@ -32,12 +22,6 @@ window.onload = () => {
         //imprime el texto decifrado
         document.getElementById("resultText").innerHTML = "aqui: " + textDecode;
     })
-    
-    
-     
-
-
-
 }
 
 

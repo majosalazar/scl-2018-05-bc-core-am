@@ -1,7 +1,5 @@
-//es un objeto
 window.cipher = {
-
-//es un metodo de un objeto, recorre cada letra 
+//metodo de un objeto, recorre cada letra 
   encode: (newText, displacement) => {
     //aqui guardara el texto
     let resultEncode = "";
@@ -23,7 +21,6 @@ window.cipher = {
     }
     //devuelve el resultado
     return resultEncode;
-
   },
   decode: (newText, displacement) => {
     //aqui guardara el texto
@@ -38,8 +35,8 @@ window.cipher = {
       if (codeAscii === 32) {
         resultDecode += " ";
       }else {
-        //ejecuta la operacion matematica de desplazamiento --- el ultimo numero debe cambiar 
-        let textDis = ((codeAscii - 65 - parseInt(displacement)) % 26) + 65;
+        //ejecuta la operacion matematica de desplazamiento para decifrar, cambie el valor de 65 que equivale a la letra A por 90 que equivale a la letra Z, considerando que el desplazamiento es el en sentido contrario funciona.
+        let textDis = ((codeAscii - 90 - parseInt(displacement)) % 26) + 90;
         //guarda el resultado de cada una y la vuelve a convertir en letra
         resultDecode += String.fromCharCode(textDis);     
       }  
