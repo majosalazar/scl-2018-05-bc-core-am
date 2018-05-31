@@ -1,87 +1,6 @@
-# Secret Party / basado en cifrado César
+# Cifrado César
 
-## El reto 
-
-Desarrollar una aplicacion web la cual permita en primera instancia el cifrado de un texto ingresado por el usuario y su posterior decifrado, todo esto en base a una clave numerica ingresada por el usuario, que indica el numero de desplazamientos a realizar en el cifrado. 
-
-## Descripcion
-
-Este proyecto fue desarrollado considerando el siguiente contexto; entre un grupo de amigas y amigos quieren realizar una fiesta sorpresa a un integrante, piensan planificar todo por WhatsApp ya que es el medio de comunicacion más comodo para ellos, pero no quieren causar sospechas en el amigo en caso de que llegue leer algun mensaje sin querer. Pensando en esto es que se propone la aplicacion web 'Secret Party', en ella pueden cifrar y decifrar mensajes en base a una clave numerica. 
-
-## Metodologia de trabajo
-
-Se utilizó la metodología Agile para así mejorar la eficiencia tanto en producción como en calidad de los productos finales.
-
-Se utilizó como herramienta de planificación Trello, donde quedaban en manifiesto las desiciones tomadacomo equipo y las tareas necesarias para llevar a cabo el proyecto.
-
-## Requisitos solicitados:
-
-### UI
-
-La interfaz debe permitir al usuario:
-
-* elegir un `offset` indicando cuántas posiciones queremos que el cifrado
-  desplace cada caracter
-* insertar un mensaje (texto) que queremos cifrar
-* ver el resultado del mensaje cifrado
-* insertar un mensaje (texto) a descifrar
-* ver el resultado del mensaje descifrado
-* hacer uso de `const`, `let` y `arrow function`
-
-### Scripts / Archivos
-
-* `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
-* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
-  debe contener to _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-* `src/cipher.js`: acá debes implementar dos funciones:
-    - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
-       queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
-       que queremos cifrar.
-    - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
-      queremos mover a la izquierda del alfabeto y `string` el mensaje (texto) 
-      que queremos descifrar.
-* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
-  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
-* `test/cipher.spec.js`: este archivo contiene los tests que deberás correr
-  para ver que todo funcione correctamente.
-
-
-## Primeros pasos
-
-1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
-   condiciones, algo como [Atom](https://atom.io/) o
-   [Code](https://code.visualstudio.com/).
-2. Para ejecutar los comandos a continuación necesitarás una :shell:
-   [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
-   que es un programita que interpreta líneas de comando (command-line
-   interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
-   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
-   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
-   también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
-   aunque recomendaría que consideres probar :penguin: GNU/Linux.
-3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
-   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo
-   privado y te darán acceso de lectura en ese repo.
-4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu _fork_ a tu computadora (copia local).
-5. 📦 Instala las dependencias del proyecto con el comando `npm
-   install`. Esto asume que has instalado [Node.js](https://nodejs.org/) (que
-   incluye [npm](https://docs.npmjs.com/)).
-6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-7. A codear se ha dicho! :rocket:
-
-
-
-## ¿Como se usa?
-
-
-## Demo
-
-
-
+## Preámbulo
 
 Está próxima la fecha del cumpleaños de tu flacx (novix) y estás organizando una
 fiesta sorpresa. Para organizar la fiesta has creado un grupo de Whatsapp junto
@@ -198,7 +117,36 @@ usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 
 ## Parte obligatoria
 
+### UI
 
+La interfaz debe permitir al usuario:
+
+* elegir un `offset` indicando cuántas posiciones queremos que el cifrado
+  desplace cada caracter
+* insertar un mensaje (texto) que queremos cifrar
+* ver el resultado del mensaje cifrado
+* insertar un mensaje (texto) a descifrar
+* ver el resultado del mensaje descifrado
+* hacer uso de `const`, `let` y `arrow function`
+
+### Scripts / Archivos
+
+* `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
+  así como una introducción a la aplicación, su funcionalidad y decisiones de
+  diseño que tomaron.
+* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
+  debe contener to _markup_ (HTML) e incluir el CSS y JavaScript necesario.
+* `src/cipher.js`: acá debes implementar dos funciones:
+    - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
+       queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
+       que queremos cifrar.
+    - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
+      queremos mover a la izquierda del alfabeto y `string` el mensaje (texto) 
+      que queremos descifrar.
+* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
+  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
+* `test/cipher.spec.js`: este archivo contiene los tests que deberás correr
+  para ver que todo funcione correctamente.
 
 ## Hacker edition
 

@@ -35,8 +35,8 @@ window.cipher = {
       if (codeAscii === 32) {
         resultDecode += " ";
       }else {
-        //ejecuta la operacion matematica de desplazamiento para decifrar, cambie el valor de 65 que equivale a la letra A por 90 que equivale a la letra Z, considerando que el desplazamiento es el en sentido contrario funciona.
-        let textDis = ((codeAscii - 90 - parseInt(displacement)) % 26) + 90;
+        //ejecuta la operacion matematica de desplazamiento para decifrar, agregue un parentesis al parseInt(displacement) asi logra ejecutar correctamente el decifrado.
+        let textDis = ((codeAscii - 90 - (parseInt(displacement))) % 26) + 90;
         //guarda el resultado de cada una y la vuelve a convertir en letra
         resultDecode += String.fromCharCode(textDis);     
       }  

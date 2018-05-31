@@ -7,42 +7,33 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- 
   <section class="section1">
     <!-- 1ra seccion titulo e instrucciones -->
-    
     <h1>Secret Party</h1>
     <h3>¿Cómo se usa?</h3>
     <p>Aqui van las super instrucciones <br> talvez no sean necesarias...</p>
-
     <!-- espacio para ingresar el codigo -->
     <div id="textArea">
       <h5>Ingresa el texto</h5>
       <textarea placeholder="gran mensaje gran" id="textIn"></textarea>
-    </div>
-      
+    </div>  
     <!-- cuadro para ingresar numero de desplazamiento y boton???? -->
     <div id="displacement">
       <h5>Ingresa tu clave:</h5>
       <input type="number" id="numberDis" min="1" max="1000">     
     </div>
-  
-    <!-- botonera encode - decode -->
+      <!-- botonera encode - decode -->
     <div class="buttons">
       <button id="btnEncode">Codifica</button>
       <button id="btnDecode">Decodifica</button>
-    </div>
-    
+    </div>    
     <!-- 3ra parte resultados -->
     <div>
       <p>aqui va el text de-codeficado</p>
       <p id="resultText"></p>
-    </div>
-
-    
+    </div>    
   </section>
-  
-<!-- esto estaba aqui de antes NO BORRAR -->
+  <!-- esto estaba aqui de antes NO BORRAR -->
   <div id="root"></div>
 
   <script src="cipher.js"></script>
