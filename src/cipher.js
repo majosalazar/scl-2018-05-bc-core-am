@@ -1,31 +1,23 @@
+//es un objeto
 window.cipher = {
 
-//es un metodo de un objeto 
-// en los parentesis van offset y el otro xd
-
-  encode: (offset, string) => {
-    /* Acá va tu código */
-    const recorrido = () => {
-      let resultado = " ";
-      for (let i = 0; i < newText.length; i++) {
-        let offset = displacement;
-        let string = newText;
-        
-
-
-        resultado += newText.charCodeAt
-
-          
-        resultado += newText[i].charAt();
-          console.log(recorrido)
-      }
-  }
- 
-
-
+//es un metodo de un objeto, recorre cada letra 
+  encode: (newText, displacement) => {
+    //aqui guardara el texto
+    let resultEncode = "";
+    //recorre el texto
+    for (let i = 0; i < newText.length; i++) {
+      //convierte la letra a numero ascii y la guarda
+      let codeAscii = newText.charCodeAt(i);
+      //ejecuta la operacion matematica de desplazamiento
+      let textDis = ((codeAscii - 65 + parseInt(displacement)) % 26) + 65;
+      //guarda el resultado de cada una y la vuelve a convertir en letra
+      resultEncode += String.fromCharCode(textDis);     
+    }
+    return resultEncode;
 
   },
-  decode: (offset, string) => {
+  decode: (newText, displacement) => {
     /* Acá va tu código */
   }
 }
