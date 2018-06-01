@@ -30,7 +30,7 @@ Este proyecto fue desarrollado considerando el siguiente contexto; entre un grup
 
 ## Primeros pasos
 
-Puedes revisar un demo de la aplicación en //
+Puedes revisar un demo de la aplicación en [Secret Party]()
 
 Al ser este un proyecto de código abierto puedes acceder a él de la siguiente forma: 
 
