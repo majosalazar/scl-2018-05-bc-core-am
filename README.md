@@ -10,9 +10,8 @@ Este proyecto fue desarrollado considerando el siguiente contexto; entre un grup
 
 ## Metodologia de trabajo
 
-Se utilizó la metodología Agile para así mejorar la eficiencia tanto en producción como en calidad de los productos finales.
-
-Se utilizó como herramienta de planificación Trello, donde quedaban en manifiesto las desiciones tomadacomo equipo y las tareas necesarias para llevar a cabo el proyecto.
+Se planificaron las tareas a desarrollar en diferentes etapas, de esta forma utilizando Trello se puede estar claro respecto del avance del proyecto.
+Desarrollo de mockaps 
 
 ## Requisitos solicitados:
 
@@ -20,13 +19,12 @@ Se utilizó como herramienta de planificación Trello, donde quedaban en manifie
 
 La interfaz debe permitir al usuario:
 
-* elegir un `offset` indicando cuántas posiciones queremos que el cifrado
-  desplace cada caracter
-* insertar un mensaje (texto) que queremos cifrar
+* elegir cuántas posiciones quiere se desplazar, en este caso es la clave
+* insertar un mensaje (texto) a cifrar
 * ver el resultado del mensaje cifrado
 * insertar un mensaje (texto) a descifrar
 * ver el resultado del mensaje descifrado
-* hacer uso de `const`, `let` y `arrow function`
+
 
 ### Scripts / Archivos
 
@@ -80,7 +78,8 @@ La interfaz debe permitir al usuario:
 
 ## Demo
 
-
+enlace a al demo
+(https://majosalazar/g)
 
 
 Está próxima la fecha del cumpleaños de tu flacx (novix) y estás organizando una

@@ -9,7 +9,7 @@ window.onload = () => {
         //conectar con el cipher js, trae el resultad
         let textEncode = window.cipher.encode(newText, displacement);     
         //imprime el texto cifrado
-        document.getElementById("resultText").innerHTML = "hola " + textEncode;
+        document.getElementById("resultText").innerHTML = textEncode;
     })
     //boton decifrar
     const OnDecode = document.getElementById("btnDecode").addEventListener("click", () => {
@@ -20,7 +20,12 @@ window.onload = () => {
         //conectar con el cipher js, trae el resultad
         let textDecode = window.cipher.decode(newText, displacement);     
         //imprime el texto decifrado
-        document.getElementById("resultText").innerHTML = "aqui: " + textDecode;
+        document.getElementById("resultText").innerHTML = textDecode;
+    })
+    //boton para recargar pagina
+    const reloadPage = document.getElementById("btnReload").addEventListener("click", () => {
+        location.reload();
+
     })
 }
 
